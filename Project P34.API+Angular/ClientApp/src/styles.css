@@ -1,0 +1,109 @@
+@import "~angular-notifier/styles";
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+
+/*BODY*/
+
+body {
+  background-color: #1c1b1b !important;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: 1px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main { flex: 1; }
+
+.row { margin: 0px !important; }
+
+/*SELECTION*/
+
+::selection { color: #000000; background-color: #ffffff; }
+
+/*SCROLL BAR*/
+
+::-webkit-scrollbar-button { background-image: url(); background-repeat: no-repeat; width: 6px; height: 0px; }
+
+::-o-scrollbar-button { background-image: url(); background-repeat: no-repeat; width: 6px; height: 0px; }
+
+::-moz-scrollbar-button { background-image: url(); background-repeat: no-repeat; width: 6px; height: 0px; }
+
+::-ms-scrollbar-button { background-image: url(); background-repeat: no-repeat; width: 6px; height: 0px; }
+
+/*----------------------------------------*/
+
+::-webkit-scrollbar-track { background-color: #ffffff; box-shadow: 0px 0px 2px #ffffff inset; }
+
+::-o-scrollbar-track { background-color: #ffffff; box-shadow: 0px 0px 2px #ffffff inset; }
+
+::-moz-scrollbar-track { background-color: #ffffff; box-shadow: 0px 0px 2px #ffffff inset; }
+
+::-ms-scrollbar-track { background-color: #ffffff; box-shadow: 0px 0px 2px #ffffff inset; }
+
+/*----------------------------------------*/
+
+::-webkit-scrollbar-thumb {
+  background-color: #191919;
+  box-shadow: 0px 1px 1px #191919 inset;
+}
+
+::-o-scrollbar-thumb {
+  background-color: #191919;
+  box-shadow: 0px 1px 1px #191919 inset;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #191919;
+  box-shadow: 0px 1px 1px #191919 inset;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #191919;
+  box-shadow: 0px 1px 1px #191919 inset;
+}
+
+/*----------------------------------------*/
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: tomato;
+  box-shadow: 0px 1px 1px tomato inset;
+}
+
+::-o-scrollbar-thumb:hover {
+  background-color: tomato;
+  box-shadow: 0px 1px 1px tomato inset;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background-color: tomato;
+  box-shadow: 0px 1px 1px tomato inset;
+}
+
+::-ms-scrollbar-thumb:hover {
+  background-color: tomato;
+  box-shadow: 0px 1px 1px tomato inset;
+}
+
+/*----------------------------------------*/
+
+::-webkit-resizer { background-image: url(); background-repeat: no-repeat; width: 7px; height: 0px; }
+
+::-o-resizer { background-image: url(); background-repeat: no-repeat; width: 7px; height: 0px; }
+
+::-moz-resizer { background-image: url(); background-repeat: no-repeat; width: 7px; height: 0px; }
+
+::-ms-resizer { background-image: url(); background-repeat: no-repeat; width: 7px; height: 0px; }
+
+/*----------------------------------------*/
+
+::-webkit-scrollbar { width: 9px; }
+
+::-o-scrollbar { width: 9px; }
+
+::-moz-scrollbar { width: 9px; }
+
+::-ms-scrollbar { width: 9px; }
+

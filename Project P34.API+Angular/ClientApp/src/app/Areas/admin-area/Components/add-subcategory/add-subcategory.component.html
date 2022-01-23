@@ -1,0 +1,14 @@
+<div id="addSubcategory" class="tabcontent tabcontent-action">
+    <form class="add-subject-form">
+      <select (change)="getcompanyid($event.target.value)" class="subject-selector" name="categories" id="categories">
+        <option  *ngFor="let data of allCategories" [value]="data.id" id="data.id" class="subject-variables">{{data.name}}</option>
+      </select>
+    </form>
+
+    
+
+    <form class="add-subject-form">
+      <input [(ngModel)]="model.name" name="first" class="add-subject-area" type="text" placeholder="Назва підкатегорії:">
+    </form>
+    <button (click)="OnSubmit()" class="btn btn-primary add-subject-btn">Додати</button>
+  </div>

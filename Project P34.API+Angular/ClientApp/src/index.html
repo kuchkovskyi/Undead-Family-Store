@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/" />
+  <title>Undead Family</title>
+
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <!--ICONS-->
+  <link rel="icon" type="image/png" href="uf.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<!--BTN TO TOP-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= 500) {
+        $('#toTop').fadeIn();
+      } else {
+        $('#toTop').fadeOut();
+      }
+    });
+    $('#toTop').click(function () {
+      $('body,html').animate({ scrollTop: 0 }, 800);
+    });
+  });
+</script>
+
+<!--ADMIN PANEL-->
+<script>
+  document.getElementById("defActionOpen").click();
+  function chooseAction(evt, actionName) {
+    var i, tabcontentAction, tablinksAction;
+
+    tabcontentAction = document.getElementsByClassName("tabcontent-action");
+    for (i = 0; i < tabcontentAction.length; i++) {
+      tabcontentAction[i].style.display = "none";
+    }
+
+    tablinksAction = document.getElementsByClassName("tablink-action");
+    for (i = 0; i < tablinksAction.length; i++) {
+      tablinksAction[i].className = tablinksAction[i].className.replace(" active", "");
+    }
+
+    document.getElementById(actionName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defListOpen").click();
+  function openList(evt, listName) {
+    var i, tabcontentList, tablinkList;
+
+    tabcontentList = document.getElementsByClassName("tabcontent-list");
+    for (i = 0; i < tabcontentList.length; i++) {
+      tabcontentList[i].style.display = "none";
+    }
+
+    tablinkList = document.getElementsByClassName("tablink-list");
+    for (i = 0; i < tablinkList.length; i++) {
+      tablinkList[i].className = tablinkList[i].className.replace(" active", "");
+    }
+
+    document.getElementById(listName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+<!--BTNS WITH SIZE (PAGE OF CURRENT PRODUCT)-->
+<script>
+  function makeActive(evt) {
+    var i, sizeBtns;
+
+    sizeBtns = document.getElementsByClassName("size-btn");
+    for (i = 0; i < sizeBtns.length; i++) {
+      sizeBtns[i].className = sizeBtns[i].className.replace(" active", "");
+    }
+
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("DefaultActive").click();
+</script>
+
+<!--ABOUT US-->
+<script>
+function ChoosePage(evt, choosePage) {
+      var i, subpage, chooseLink;
+
+      subpage = document.getElementsByClassName("about-us-subpage");
+      for (i = 0; i < subpage.length; i++) {
+        subpage[i].style.display = "none";
+      }
+
+      chooseLink = document.getElementsByClassName("choose-link");
+      for (i = 0; i < chooseLink.length; i++) {
+        chooseLink[i].className = chooseLink[i].className.replace(" active", "");
+      }
+
+      document.getElementById(choosePage).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpenPage").click();
+</script>
+
+<!--HISTORY OF ORDERS-->
+<script>
+  let coll = document.getElementsByClassName('btn-collapse');
+    for (let i = 0; i < coll.length; i++) {
+      coll[i].addEventListener('click', function() {
+        this.classList.toggle('active');
+        let content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    }
+</script>
+
+<!--BOOTSTRAP'S SCRIPTS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>

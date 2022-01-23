@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DTO.deps.json
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DTO.dll
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DTO.pdb
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DataAccess.dll
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\bin\Debug\netcoreapp3.1\Project P34.DataAccess.pdb
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.AssemblyInfo.cs
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.csproj.CopyComplete
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.dll
+C:\Users\PC\Desktop\AngularRentAndSale\Diplom\Project P34.DTO\obj\Debug\netcoreapp3.1\Project P34.DTO.pdb

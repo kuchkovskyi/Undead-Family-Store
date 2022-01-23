@@ -1,0 +1,91 @@
+/*ELEMENTS*/
+.col { margin-top: 2%; }
+
+.row-sm { display: none; margin-top: 2% !important; }
+
+.col-lg { display: block; }
+
+/*BACK LINK*/
+
+.back-link {
+  color: tomato;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.back-link::before {
+  content: '< ';
+  font-family: 'Nanum Gothic', sans-serif;
+  color: tomato;
+  font-size: 18px;
+}
+
+/*BODY OF THE PAGE*/
+
+.number-li { color: #b4b4b4; }
+
+.question-title { color: #b4b4b4; font-weight: 400; }
+
+.answer-title { margin-top: 30px; color: #b4b4b4; font-weight: 300; }
+
+.answer-text { margin-top: 20px; color: #b4b4b4; font-weight: 200; }
+
+.need-help { margin-top: 70px; color: #b4b4b4; font-weight: 300; }
+
+.btn {
+  margin-top: 15px !important;
+  border-radius: 0%;
+  color: #f0f0f1 !important;
+  background-color: tomato !important;
+  padding: 6px 20px !important;
+  margin-bottom: 30px !important;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus { box-shadow: 0 0 20px rgba(255, 99, 71, 0.5); }
+
+.new-post { color: tomato; }
+
+.cart {
+  padding: 2px 5px;
+  background-color: #f0f0f1;
+  color: #191919;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.br-sm { display: none; }
+
+/*MEDIA*/
+/*LAPTOPS*/
+@media screen and (min-width: 1240px) {
+
+}
+
+/* TABLETS */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .add-col { display: block; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .add-col { display: none; }
+
+  .col-lg { display: none; }
+
+  .row-sm { display: block; }
+}
+
+/*MOBILE PHONES*/
+@media screen and (max-width: 768px) {
+  .question-title { margin-top: 7%; }
+
+  .add-col { display: none; }
+
+  .row-sm { display: block; }
+
+  .col-lg { display: none; }
+
+  .br-sm { display: block; }
+}

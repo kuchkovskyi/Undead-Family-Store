@@ -1,0 +1,101 @@
+/*TITLE*/
+.title-page { text-align: center; margin-top: 3%; }
+
+.personal-room-span { color: #b4b4b4; font-weight: 200; border-bottom: 1px solid tomato; }
+
+/*USER IMAGE*/
+.user-image { width: 100%; }
+
+/*DATA OF USER*/
+td { border: 1px solid transparent;  color: #f0f0f1; font-weight: 300; font-size: 16px; }
+
+.data-first { text-align: left; }
+
+.data-second { text-align: right; text-decoration: underline tomato; }
+
+.subtitle-of-page {
+  text-align: center;
+  color: #b4b4b4;
+  font-weight: 200;
+  margin-top: 4%;
+}
+
+/*ACTIONS*/
+hr { width: 90%; background-color: tomato; display: none; }
+
+.action-link { text-decoration: none; color: #b4b4b4; border: 1px solid transparent; font-size: 14px; letter-spacing: 2px; }
+
+.action-link:hover { border-bottom: 1px solid tomato; transition: all .6s; }
+
+/*MEDIA*/
+
+/* HIGH SCREENS */
+@media screen and (min-width: 1240px) {
+
+}
+
+/* TABLETS */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*IPAD*/
+@media screen and (width: 768px) and (height: 1024px) {
+  .user-image { width: 100px; }
+
+  hr { display: none; }
+
+  .action-link { text-align: center; display: block; margin-left: 0; }
+}
+
+/*PHONES*/
+@media screen and (max-width: 767px) {
+  hr { display: block; }
+
+  .user-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .action-link { text-align: center; display: block; margin-left: auto; margin-right: auto; }
+
+  .action-link:hover { text-decoration: underline tomato; transition: all .6s; border-bottom: 1px solid transparent; }
+}
+
+@media screen and (min-width: 570px) and (max-width: 575px) {
+  .user-image { width: 310px; height: 310px; }
+}
+
+@media screen and (min-width: 361px) and (max-width: 569px) {
+  .data-second { font-size: 12px; padding-left: 0; padding-right: 0; }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 360px) {
+  hr { display: block; }
+
+  .title-page { font-size: 20px; }
+
+  .user-image {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .action-link { text-align: center; display: block; margin-left: auto; margin-right: auto; }
+
+  .action-link:hover { text-decoration: underline tomato; transition: all .6s; border-bottom: 1px solid transparent; }
+
+  .data-first { font-size: 12px; }
+
+  .data-second { font-size: 10px; padding-left: 0; padding-right: 0; }
+}

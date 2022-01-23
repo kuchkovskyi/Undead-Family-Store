@@ -1,0 +1,55 @@
+
+  <div id="addProduct" class="tabcontent tabcontent-action" >
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.name" name="firstname" class="add-subject-area" type="text" placeholder="Назва продукту:">
+      </form>
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.description" name="description" class="description-of-product add-subject-area" type="text" placeholder="Опис продукту:">
+      </form>
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.image" name="image" class="add-subject-area" type="text" placeholder="URL головної картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+
+      <p class="addtnl-files-title">Додаткові картинки</p>
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.images[0]" name="image1"  class="add-subject-area" type="text" placeholder="URL додаткової картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.images[1]" name="image2"   class="add-subject-area" type="text" placeholder="URL додаткової картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.images[2]" name="image3"  class="add-subject-area" type="text" placeholder="URL додаткової картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+
+      <form class="add-subject-form" style="margin-top: 8%;">
+        <input [(ngModel)]="model.price" name="price"  class="add-subject-area" type="number" placeholder="Ціна продукту:">
+      </form>
+
+      <form class="add-subject-form">
+        <select  [(ngModel)]="SelectedSubCategory" class="subject-selector" name="categories" id="categories">
+          <option *ngFor="let data of allSubCategories" (click)="onOptionSelect(data.id)" class="subject-variables">{{data.id}}</option>
+        
+        </select>
+      </form>
+
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.size" name="size" class="add-subject-area" type="text" placeholder="Розмір продукту:">
+      </form>
+      <form class="add-subject-form">
+        <input [(ngModel)]="model.countryMade" name="countryMade"  class="add-subject-area" type="text" placeholder="Країна виробник:">
+      </form>
+      <form class="add-subject-form">
+          <input [(ngModel)]="model.count" name="count"  class="add-subject-area" type="number" placeholder="Кількість:">
+        </form>
+        <form class="add-subject-form">
+            <input [(ngModel)]="model.rating" name="rating"  class="add-subject-area" type="number" placeholder="Рейтинг(0-10):">
+          </form>
+      <button (click)="OnSubmit()" class="btn btn-primary add-subject-btn">Додати</button>
+    </div>
+   
+ 
+

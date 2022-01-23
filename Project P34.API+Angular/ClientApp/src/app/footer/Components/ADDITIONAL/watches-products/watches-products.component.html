@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="row">
+    <h4 class="title"><span class="title-element">Недавно переглянуті</span></h4>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-4 col-md-4 col-sm-6 col-xs-6" *ngFor="let data of products">
+      <div class="product-wrap">
+        <div class="product-image">
+          <a><img src="{{data.image}}"></a>
+          <div class="shadow"></div>
+          <div class="actions">
+            <div class="actions-btn">
+              <div class="add-to-cart">
+                <a class="add-to-cart-button" title="Додати у корзину"></a>
+              </div>
+              <div class="add-to-links">
+                <div class="add-to-wishlist">
+                  <a class="add-to-wishlist-button" title="Додати у список бажань"></a>
+                </div>
+                <div class="quikview">
+                  <a class="quikview-button" routerLink="/product-view" title="Перегляд товару"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list">
+          <h3>{{data.name}}</h3>
+          <div class="price">{{data.price}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

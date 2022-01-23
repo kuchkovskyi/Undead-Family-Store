@@ -1,0 +1,172 @@
+/*HAT OF THE PAGE*/
+
+* { box-sizing: border-box; }
+
+.top-row {
+  background-attachment: fixed;
+  background-image: url(../../../../../assets/images/FAQ/typing-hands.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 5% !important;
+}
+
+.help {
+  color: #f0f0f1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.inner-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  padding: 80px 0px;
+}
+
+.search-form {
+  position: relative;
+  width: 500px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0%;
+}
+
+.search-area {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #f0f0f1;
+  border-radius: 0%;
+  outline: none;
+  color: #191919;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  background-color: #f0f0f1;
+}
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #191919;
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+.btn-search:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #f0f0f1;
+}
+
+.search-form:hover .search-area,
+.search-form:focus .search-area,
+.search-form:active .search-area { border: 2px solid tomato; transition: all .6s; }
+
+.search-form:active .btn-search,
+.search-form:focus .btn-search,
+.search-form:hover .btn-search { background-color: tomato; transition: all .6s; }
+
+/*BODY OF THE PAGE*/
+
+.col { margin-top: 2%; margin-bottom: 2%; }
+
+.theme-of-question {
+  margin-bottom: 30px;
+  color: tomato;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.question-link { text-decoration: none; }
+
+.question-link:hover { text-decoration: underline tomato; }
+
+.question {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #f0f0f1;
+}
+
+/*MEDIA*/
+
+/*LAPTOPS*/
+@media screen and (min-width: 1240px) {
+    .top-row { background-size: 100%; }
+
+    .inner-block { padding: 80px 0px; }
+
+    .search-form { width: 500px; }
+}
+
+/*TABLETS*/
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .top-row { background-size: 100%; }
+
+  .inner-block { padding: 80px 0px; }
+
+  .search-form { width: 500px; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .top-row { background-size: 100%; background-attachment: scroll; }
+
+  .inner-block { padding: 80px 0px; }
+
+  .search-form { width: 500px; }
+}
+
+/*MOBILE PHONES*/
+@media screen and (max-width: 768px) {
+  .top-row {
+    background-image: url(../../../../../assets/images/FAQ/typing-hands-sm.jpg);
+    background-size: 150%;
+    background-attachment: scroll;
+  }
+
+  .help { font-size: 20px; }
+
+  .inner-block { padding: 80px 0px; }
+
+  .search-form { width: 340px; }
+
+  .question-link, .question { font-size: 14px; font-weight: 200; line-height: 1.5; }
+
+  .theme-of-question { font-size: 16px; }
+}
+
+/*IPhone 5 / 5S / SE*/
+@media screen and (width: 320px) and (height: 568px) {
+  .top-row {
+    background-image: url(../../../../../assets/images/FAQ/typing-hands-sm.jpg);
+    background-size: 150%;
+  }
+
+  .help { font-size: 20px; }
+
+  .inner-block { padding: 80px 0px; }
+
+  .search-form { width: 300px; }
+
+  .question-link, .question { font-size: 14px; font-weight: 200; }
+
+  .theme-of-question { font-size: 16px; }
+}
+
+@media screen and (min-width: 445px) and (max-width: 575px) {
+  .quest-col { padding-right: 7%; padding-left: 7%; }
+}
+
+/*XS SCREENS*/
+@media screen and (min-width: 280px) and (max-width: 375px) {
+  .search-form { width: 90%; }
+
+  .quest-col { width: 100%; padding: 0 25px; }
+}

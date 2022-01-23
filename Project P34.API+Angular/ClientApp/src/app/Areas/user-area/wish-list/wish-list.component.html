@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    <h4 class="title"><span class="title-element">Список бажань</span></h4>
+  </div>
+
+  <!--ЗРОБИТИ ПЕРЕВІРКУ НА НАЯВНІСТЬ ПРОДУКТІВ У СПИСКУ-->
+  
+  <div class="row" *ngIf="!isEmpty">
+    <ul class="empty-list-menu">
+      <li class="empty-list-menu-item">
+        <p class="empty-list-text">Ваш список бажань порожній</p>
+      </li>
+      <li class="empty-list-menu-item">
+        <p class="empty-list-text-sm">Гадаємо, саме час додати у нього щось новеньке :)</p>
+      </li>
+    </ul>
+  </div>
+ 
+
+  <div class="row">
+    <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-6" *ngFor="let prods of showStorage">
+      <div class="product-wrap">
+        <div class="product-image">
+          <a><img src={{prods[0].image}}></a>
+          <div class="shadow"></div>
+          <div class="actions">
+            <div class="actions-btn">
+              <div class="add-to-cart">
+                <a class="add-to-cart-button" title="Додати у корзину"></a>
+              </div>
+              <div class="remove-from-links">
+                <div class="remove-from-wishlist">
+                  <a class="remove-from-wishlist-button" (click)="removeFromWishList(prods[0].id)" title="Видалити зі списку бажань"></a>
+                </div>
+                <div class="quikview">
+                  <a class="quikview-button" routerLink="/product-view" (click)="viewProduct(prods[0].id)" title="Перегляд товару"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list">
+          <h3>{{prods[0].name}}</h3>
+          <div class="price">{{prods[0].price}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

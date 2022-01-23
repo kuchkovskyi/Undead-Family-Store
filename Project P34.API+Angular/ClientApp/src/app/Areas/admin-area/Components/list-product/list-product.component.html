@@ -1,0 +1,36 @@
+<div id="productList" class="tabcontent tabcontent-list">
+  <form class="srch-form srch-form-top">
+    <input [(ngModel)]="searchProduct" name="search" class="srch-area srch-area-top" type="text" placeholder="Пошук:">
+    <button class="btn btn-primary srch-btn" (click)="SearchProduct()" type="submit"></button>
+  </form>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col col-lg-6 col-md-6 col-sm-0 col-xs-0" style="margin-bottom: 5%;" *ngFor="let data of searchResult">
+        <div class="product-wrap">
+          <div class="product-image">
+            <a href=""><img src="{{data.image}}"></a>
+            <div class="shadow"></div>
+            <div class="actions">
+              <div class="actions-btn">
+                <div class="edit-product">
+                  <a class="edit-product-button"  [routerLink]="['/admin-panel/edit-product', data.id]" title="Редагувати продукт"></a>
+                </div>
+                <div class="add-to-links">
+                  <div class="remove-product" >
+                    <a  class="remove-product-button" (click)="RemoveProduct(data.id)" title="Видалити продукт"></a>
+                  </div>
+                  <div class="quikview">
+                    <a class="quikview-button" routerLink="/product-view" title="Перегляд товару"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-list">
+            <h3>{{data.name}}</h3>
+            <div class="price">{{data.price}}₴</div>
+          </div>
+        </div>
+      </div>

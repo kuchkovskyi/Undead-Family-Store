@@ -1,0 +1,7 @@
+<div id="categoryList"  class="tabcontent tabcontent-list">
+  <form class="add-subject-form" *ngFor="let data of listOfData">
+    <input type="text" class="data-of-category-area" placeholder="{{data.name}}">
+    <button class="btn btn-primary list-btn edit-btn" (click)="editCat(data.id)" type="button"></button>
+    <button class="btn btn-primary list-btn remove-btn" (click)="RemoveCategory(data.id)" type="button"></button>
+  </form>
+</div>

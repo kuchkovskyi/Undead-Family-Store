@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12" *ngIf="isLoggedIn === false">
+
+      <h4 class="title">АВТОРИЗАЦІЯ</h4>
+
+      <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <input type="email" class="form-control" placeholder="Email:" [(ngModel)]="model.Email"
+        name="Email">
+        <input type="password" class="form-control" placeholder="Пароль:" [(ngModel)]="model.Password"
+        name="Password">
+        <button class="btn btn-login" type="submit" name="submit">Увійти</button>
+      </form>
+
+      <div class="auth-block">
+        <ul class="auth-block__ul">
+          <li class="auth-block__li"><a [routerLink]="['/register']" class="auth-link">РЕЄСТРАЦІЯ?</a></li>
+          <li class="auth-block__li"><a [routerLink]="['/forgot-password']" class="auth-link">ЗАБУЛИ ПАРОЛЬ?</a></li>
+        </ul>
+      </div>
+
+      <div class="soc-webs">
+        <table class="soc-webs-table">
+          <tbody>
+            <tr>
+              <td class="soc-web-td"><i (click)="facebook()" class="soc-web-link fa fa-2x fa-facebook-square" aria-hidden="true"></i></td>
+              <td class="soc-web-td"><i (click)="google()" class="soc-web-link fa fa-2x fa-google" aria-hidden="true"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</div>

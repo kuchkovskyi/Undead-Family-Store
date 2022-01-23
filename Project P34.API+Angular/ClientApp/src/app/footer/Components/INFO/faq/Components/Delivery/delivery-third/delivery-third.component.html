@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="row row-sm">
+    <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+    </div>
+
+    <div class="col col-lg-3 col-md-3 col-sm-0 add-col"></div>
+    <div class="col col-lg-7 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="question-title">Хочу зробити замовлення. Коли його зможуть доставити?</h3>
+
+      <h5 class="answer-title">Як дізнатися найближчий час доставки товару?</h5>
+      <p class="answer-text">Після обробки товару та надсилання його <a href="https://novaposhta.ua/"
+          class="new-post">Новою Поштою</a> на Ваш номер телефону та електронну адресу прийде SMS-повідомлення з
+        ТТН-кодом. На головній сторінці <a href="https://novaposhta.ua/" class="new-post">Нової Пошти</a> введіть
+        надісланий Вам ТТН-код (номер накладної). Так Ви зможете переглядати місцезнаходження замовлення, а також дату його прибуття.</p>
+
+      <h5 class="need-help">Все ще потрібна допомога?</h5>
+      <button class="btn" [routerLink]="['/support-request']">Зв'яжіться з нами</button>
+    </div>
+
+  </div>
+
+</div>

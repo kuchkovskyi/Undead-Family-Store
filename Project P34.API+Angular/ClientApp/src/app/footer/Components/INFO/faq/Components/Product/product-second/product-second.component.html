@@ -1,0 +1,43 @@
+<div class="container">
+
+  <div class="row row-sm">
+    <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+    </div>
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 add-col"></div>
+    <div class="col col-lg-8 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="question-title">Як дізнатися, чи товар є в наявності?</h3>
+      <h5 class="answer-title">Перевіряйте наявність на сторінці товару.</h5>
+      <p class="answer-text">Ми регулярно оновлюємо інформацію і стежимо, щоб дані про наявність були актуальними.</p>
+      <ol type="1">
+        <li class="number-li">
+          <p class="answer-text">Перейдіть на сторінку товару, що Вас зацікавив.</p>
+        </li>
+
+        <li class="number-li">
+          <p class="answer-text">Якщо праворуч від зображення товару є
+            кнопка <br class="br-sm"><span class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Додати у
+              кошик</span> та надпис "<span style="color: lime; font-weight: 200;">У наявності</span>", він
+            доступний для замовлення.</p>
+        </li>
+
+        <li class="number-li">
+          <p class="answer-text"> Якщо товар закінчився, замість цієї кнопки буде надпис <br class="br-sm">
+            <span style="color: tomato; font-weight: 200;">Немає в наявності</span> .
+          </p>
+        </li>
+      </ol>
+
+      <h5 class="need-help">Все ще потрібна допомога?</h5>
+      <button class="btn" [routerLink]="['/support-request']">Зв'яжіться з нами</button>
+    </div>
+
+  </div>
+
+</div>

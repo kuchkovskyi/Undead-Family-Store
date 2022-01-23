@@ -1,0 +1,59 @@
+<div class="container">
+
+  <div class="row row-sm">
+    <a [routerLink]="['/user-area/personal-room']" class="back-link bl-sm">Назад</a>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/user-area/personal-room']" class="back-link">Назад</a>
+    </div>
+
+    <div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <h4 class="subtitle">Основне</h4>
+            <input type="text" class="form-control" [(ngModel)]="user.fullName" name="fullName"
+              placeholder={{user.fullName}}>
+            <input type="number" class="form-control" [(ngModel)]="user.age" name="age" placeholder="{{user.age}}">
+          </div>
+
+          <h4 class="subtitle">Фото</h4>
+          <div class="row">
+            <img src="{{user.pictureUrl}}" alt="Фото профілю" class="user-image" id="user-img">
+            <input type="url" class="form-control image-block__input" placeholder="URL картинки:" [(ngModel)]="user.pictureUrl" name="pictureUrl">
+          </div>       
+          
+
+          <div class="row">
+            <h4 class="subtitle">Проживання</h4>
+            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="">
+            <input type="text" class="form-control" placeholder="">
+          </div>
+
+          <div class="row">
+            <h4 class="subtitle">Контактні данні</h4>
+            <input type="text" class="form-control" [(ngModel)]="user.phone" name="phone" placeholder="{{user.phone}}">
+            <input type="email" class="form-control" [(ngModel)]="user.email" name="email" placeholder="{{user.email}}">
+          </div>
+
+          <div class="row">
+            <h4 class="subtitle">Пароль</h4>
+            <input type="password" class="form-control" placeholder="Новий пароль">
+            <input type="password" class="form-control" placeholder="Підтвердіть пароль">
+          </div>
+        </div>
+
+        <button class="btn btn-submit" (click)="Save()">Зберегти</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>

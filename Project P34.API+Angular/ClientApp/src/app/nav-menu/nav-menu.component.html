@@ -1,0 +1,93 @@
+<header>
+  <!--FIRST MENU -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" [routerLink]="['/']">UNDEAD FAMIŁY</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <li class="nav-item nav-item-search">
+      <form class="srch-form srch-form-top">
+          <!-- (ngModelChange)="SearchProduct()" -->
+        <input name="search" [(ngModel)]="searchProduct"  type="text"
+        placeholder="Пошук товару:" class="srch-area srch-area-top" type="text" placeholder="Пошук:">
+        <button (click)="SearchProduct()" class="btn btn-primary srch-btn"></button>
+      </form>
+    </li>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <ul class="navbar-nav">
+        <li class="nav-item" *ngIf="isAdmin === true">
+          <a [routerLink]="['/admin-panel']" class="nav-link">Панель</a>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="['/user-area/personal-room']" class="btn btn-account btn-act"></button>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="['/user-area/wish-list']" class="btn btn-wishlist btn-act"></button>
+        </li>
+        <li class="nav-item">
+          <button [routerLink]="['/user-area/shopping-cart']" class="btn btn-cart btn-act"></button>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn === false"><a class="nav-link" data-toggle="modal"
+            data-target="#exampleModal">Вхід</a></li>
+
+        <li class="nav-item" *ngIf="isLoggedIn === true">
+          <a (click)="Logout()" class="nav-link">Вихід</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--SECOND MENU -->
+  <div class="dark-box">
+    <form class="srch-form">
+      <input class="srch-area" type="text" placeholder="Пошук:">
+      <button class="btn btn-primary srch-btn" type="submit"></button>
+    </form>
+  </div>
+
+  <!--LOGIN-PLATFORM-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">АВТОРИЗАЦІЯ</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="close-X" aria-hidden="true">X</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+            <input type="email" class="form-control login-data" placeholder="Email: " [(ngModel)]="model.Email"
+              name="Email">
+            <input type="password" class="form-control login-data" placeholder="Пароль:" [(ngModel)]="model.Password"
+              name="Password">
+            <button class="btn btn-primary btn-authorize" type="submit" name="submit">УВІЙТИ</button>
+          </form>
+
+          <ul class="login-menu">
+            <li class="log-item"><a *ngIf="isLoggedIn === false" [routerLink]="['register']" class="modal-bottom-link"
+                data-dismiss="modal" aria-label="Close">РЕЄСТРАЦІЯ</a></li>
+            <li class="log-item"><a *ngIf="isLoggedIn === false" [routerLink]="['forgot-password']" class="modal-bottom-link" data-dismiss="modal"
+                aria-label="Close">ЗАБУЛИ ПАРОЛЬ ?</a>
+            </li>
+          </ul>
+
+          <div class="log-soc-block">
+            <i (click)="google()" *ngIf="isLoggedIn === false" class="log-soc-link fa fa-2x fa-google" aria-hidden="true"></i>
+
+            <i (click)="facebook()" *ngIf="isLoggedIn === false" class="log-soc-link fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>

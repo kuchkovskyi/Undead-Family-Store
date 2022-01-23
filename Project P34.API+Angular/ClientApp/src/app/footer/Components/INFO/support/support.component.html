@@ -1,0 +1,26 @@
+<h3 class="title"><span class="title__text">Зворотній звязок</span></h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+
+      <div class="data-box">
+        <form (ngSubmit)="onSubmit()" class="data-form">
+          <div class="data-form__block">
+            <p class="block-text">Email:</p>
+            <input type="email" [(ngModel)]="model.email" name="email" class="form-control email-area">
+          </div>
+
+          <div class="data-form__block">
+            <p class="block-text">Питання:</p>
+            <textarea name="question" id="" cols="30" [(ngModel)]="model.text" rows="10" class="form-control question-area"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">Надіслати</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

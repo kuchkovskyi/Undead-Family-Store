@@ -1,0 +1,71 @@
+.title {
+  color: #b4b4b4;
+  text-align: center;
+  font-weight: 200;
+  margin: 1% 0 3%;
+  letter-spacing: 2px;
+  text-decoration: underline tomato;
+}
+
+.subtitle {
+  color: #b4b4b4;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin: 3% 0;
+}
+
+.text { font-weight: 200; color: #f0f0f1; }
+
+.faq-link { text-decoration: none; color: tomato; }
+
+.faq-link:hover { text-decoration: underline #f0f0f1; }
+
+.form-control {
+  background-color: #f0f0f1;
+  color: #191919;
+  border-radius: 0%;
+  letter-spacing: 2px;
+  margin: 1% 0;
+  width: 70%;
+}
+
+.form-control:hover { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); transition: all .6s; }
+
+.form-control:active,
+.form-control:focus { border: 1px solid #f0f0f1; box-shadow: none; transition: all .6s; }
+
+.date-control { width: 30%; }
+
+.action { margin: 0 auto; }
+
+.action-td { width: 50%; }
+
+.back-link { text-decoration: none; color: tomato; letter-spacing: 2px; }
+
+.back-link::before {
+  content: '< ';
+  color: tomato;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  margin: 0 2%;
+}
+
+.btn-submit { background-color: tomato; color: #f0f0f1; border-radius: 0%; float: right; }
+
+.btn-submit:hover { box-shadow: 0 0 20px rgba(255, 99, 71, 0.5); transition: all .6s; }
+
+.btn-submit:focus,
+.btn-submit:active { box-shadow: none; transition: all .6s; }
+
+/*MEDIAS*/
+
+/*MOBILES*/
+@media screen and (max-width: 768px) {
+  .subtitle { font-size: 16px; }
+
+  .text { font-size: 14px; }
+
+  .form-control { width: 100%; font-size: 14px; }
+
+  .date-control { width: 60%; font-size: 14px; }
+}

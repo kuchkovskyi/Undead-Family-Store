@@ -1,0 +1,53 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <h4 class="title">Повернення</h4>
+
+      <p class="text">Якщо ви маєте проблеми з товаром, які неможливо вирішити за допомогою технічної підтримки або
+        відділу з продажів, ви можете повернути його назад. Для цього достатньо заповнити форму повернення. Ваш запит
+        буде оброблено протягом трьох робочих днів. Про те, як повернути товар у Вашому місці читайте <a
+          [routerLink]="['/faq/0223369/-How-to-return-the-goods-in-my-city-']" class="faq-link">тут</a>. </p>
+      <p class="text">Поверненню підлягають товари за умови збереження товарного вигляду, наявності повної комплектації
+        та оригінального пакування.</p>
+      <p class="text">Зверніть увагу на групу товарів, що <a
+          [routerLink]="['/faq/0223369/-What-goods-are-not-subject-to-exchange-and-return-']" class="faq-link"> не
+          підлягають
+          поверненню</a> згідно до чинного законодавства.</p>
+
+      <h5 class="subtitle">ІНФОРМАЦІЯ ПРО ЗАМОВЛЕННЯ</h5>
+
+        <form (ngSubmit)="OnSubmit()" #myForm="ngForm" class="form-group">
+          <input type="text" class="form-control" placeholder="ПІБ" [(ngModel)]="model.nameSurname" name="NameSurname">
+          <input type="email" class="form-control" placeholder="Email" [(ngModel)]="model.email" name="Email">
+          <input type="phone" class="form-control" placeholder="Номер телефону" [(ngModel)]="model.phone" name="Phone">
+          <input type="text" class="form-control" placeholder="Номер замовлення" [(ngModel)]="model.numberOfOrder" name="NumberOfOrder">
+          <input type="date" class="form-control date-control">
+        </form>
+
+
+      <h5 class="subtitle">ІНФОРМАЦІЯ ПРО ТОВАРИ І ПРИЧИНА ПОВЕРНЕННЯ</h5>
+      <form (ngSubmit)="OnSubmit()" class="form-group">
+        <input type="text" class="form-control" placeholder="Назва товару" [(ngModel)]="model.nameOfProduct" name="NameOfProduct">
+        <input type="text" class="form-control" placeholder="Артикул" [(ngModel)]="model.articleOfProduct" name="ArticleOfProduct">
+        <input type="number" class="form-control" placeholder="Кількість" [(ngModel)]="model.count" value="2" name="Count">
+        <textarea type="text" class="form-control" placeholder="Причина" rows="10" [(ngModel)]="model.reason" name="Reason"></textarea>
+      </form>
+
+      <table class="action">
+        <tbody>
+          <tr>
+            <td class="action-td"><a [routerLink]="['/']" class="back-link">Назад</a></td>
+            <td class="action-td"><button type="submit" class="btn btn-submit" (click)="OnSubmit()">Підтвердити</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</div>
+

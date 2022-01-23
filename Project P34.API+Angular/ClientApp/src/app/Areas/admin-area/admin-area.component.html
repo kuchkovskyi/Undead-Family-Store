@@ -1,0 +1,210 @@
+<div class="row dashboard-block">
+
+  <!--ACTIONS-->
+  <div class="col col-lg-6 col-md-6 col-sm-0 col-xs-0 col-actions">
+
+    <div class="tab">
+      <button class="tablinks tablink-action" onclick="chooseAction(event, 'addCategory')">Додати
+        категорію</button>
+      <button class="tablinks tablink-action" onclick="chooseAction(event, 'addSubcategory')" id="defActionOpen">Додати
+        підкатегорію</button>
+      <button class="tablinks tablink-action" onclick="chooseAction(event, 'addProduct')">Додати
+        продукт</button>
+    </div>
+
+    <app-add-category></app-add-category>
+    <!-- <div id="addCategory" class="tabcontent tabcontent-action">
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="Назва категорії:">
+      </form>
+      <button class="btn btn-primary add-subject-btn">Додати</button>
+    </div> -->
+    <app-add-subcategory></app-add-subcategory>
+    <!-- <div id="addSubcategory" class="tabcontent tabcontent-action">
+      <form class="add-subject-form">
+        <select class="subject-selector" name="categories" id="categories">
+          <option class="subject-variables">Чоловіче</option>
+          <option class="subject-variables">Жіноче</option>
+          <option class="subject-variables">Дитяче</option>
+          <option class="subject-variables">Аксесуари</option>
+        </select>
+      </form>
+
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="Назва підкатегорії:">
+      </form>
+      <button class="btn btn-primary add-subject-btn">Додати</button>
+    </div> -->
+    <app-add-product></app-add-product>
+    <!-- <div id="addProduct" class="tabcontent tabcontent-action" >
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="Назва продукту:">
+      </form>
+      <form class="add-subject-form">
+        <input class="description-of-product add-subject-area" type="text" placeholder="Опис продукту:">
+      </form>
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="URL головної картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+
+      <p class="addtnl-files-title">Додаткові картинки</p>
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="URL додаткової картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="URL додаткової картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="URL додаткової картинки або файл:">
+        <button class="btn btn-primary file-btn" type="button"></button>
+      </form>
+
+      <form class="add-subject-form" style="margin-top: 8%;">
+        <input class="add-subject-area" type="text" placeholder="Ціна продукту:">
+      </form>
+
+      <form class="add-subject-form">
+        <select class="subject-selector" name="categories" id="categories">
+          <option class="subject-variables">Чоловіче</option>
+          <option class="subject-variables">Жіноче</option>
+          <option class="subject-variables">Дитяче</option>
+          <option class="subject-variables">Аксесуари</option>
+        </select>
+      </form>
+
+      <form class="add-subject-form">
+        <select class="subject-selector" name="categories" id="categories">
+          <option class="subject-variables">Штани</option>
+          <option class="subject-variables">Кеди</option>
+          <option class="subject-variables">Кільця</option>
+          <option class="subject-variables">Шкарпетки</option>
+        </select>
+      </form>
+
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="Розмір продукту:">
+      </form>
+      <form class="add-subject-form">
+        <input class="add-subject-area" type="text" placeholder="Країна виробник:">
+      </form>
+      <button class="btn btn-primary add-subject-btn">Додати</button>
+    </div> -->
+
+  </div>
+
+  <!--LISTS-->
+  <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+    <div class="tab">
+      <button class="tablinks tablink-list" onclick="openList(event, 'categoryList')"
+        id="defListOpen">Категорії</button>
+      <button class="tablinks tablink-list" onclick="openList(event, 'subcategoryList')"
+        id="defListOpen">Підкатегорії</button>
+      <button class="tablinks tablink-list" onclick="openList(event, 'productList')">Продукти</button>
+      <button class="tablinks tablink-list" onclick="openList(event, 'userList')">Список
+        користувачів</button>
+    </div>
+
+
+    <app-list-category></app-list-category>
+    <!--
+    <div id="categoryList" class="tabcontent tabcontent-list">
+      <form class="add-subject-form">
+        <input type="text" class="data-of-category-area" placeholder="Чоловіче">
+        <button class="btn btn-primary list-btn edit-btn" type="button"></button>
+        <button class="btn btn-primary list-btn remove-btn" type="button"></button>
+      </form>
+    </div> -->
+    <app-list-subcategory></app-list-subcategory>
+    <!-- <div id="subcategoryList" class="tabcontent tabcontent-list">
+      <form class="add-subject-form">
+        <input type="text" class="data-of-category-area" placeholder="Кеди">
+        <button class="btn btn-primary list-btn edit-btn" type="button"></button>
+        <button class="btn btn-primary list-btn remove-btn" type="button"></button>
+      </form>
+    </div> -->
+
+    <!-- <div id="productList" class="tabcontent tabcontent-list">
+      <form class="srch-form srch-form-top">
+        <input class="srch-area srch-area-top" type="text" placeholder="Пошук:">
+        <button class="btn btn-primary srch-btn" type="submit"></button>
+      </form>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col col-lg-6 col-md-6 col-sm-0 col-xs-0">
+            <div class="product-wrap">
+              <div class="product-image">
+                <a href=""><img src="IMGS/Products/photo-1.jpg"></a>
+                <div class="shadow"></div>
+                <div class="actions">
+                  <div class="actions-btn">
+                    <div class="edit-product">
+                      <a class="edit-product-button" href="#" title="Редагувати продукт"></a>
+                    </div>
+                    <div class="add-to-links">
+                      <div class="remove-product">
+                        <a class="remove-product-button" href="#" title="Видалити продукт"></a>
+                      </div>
+                      <div class="quikview">
+                        <a class="quikview-button" href="#" title="Перегляд товару"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list">
+                <h3>Футболка UF</h3>
+                <div class="price">₴ 499</div>
+              </div>
+            </div>
+          </div> -->
+    <app-list-product></app-list-product>
+
+    <app-list-user></app-list-user>
+    <!-- <div id="userList" class="tabcontent tabcontent-list">
+      <form class="srch-form srch-form-top">
+        <input class="srch-area srch-area-top" type="text" placeholder="Пошук:">
+        <button class="btn btn-primary srch-btn" type="submit"></button>
+      </form>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-sm-0 col-xs-0">
+            <div class="card">
+              <img class="card-img-top"
+                src="file:///C:/Users/admin/Desktop/%D0%A0%D0%BE%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D1%96%D0%BB%202/Examples%20of%20Sites/Rivne%20Home.ua/IMGS/empty%20avatar.jpg"
+                alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">John CSS</h4>
+                <p class="card-text">
+                  <i class="fa fa-phone" aria-hidden="true"></i>&#8194;
+                  <span class="data-of-employee">+380124567900</span>
+                </p>
+                <p class="card-text">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>&#8194;
+                  <span class="data-of-employee">example@gmail.com</span>
+                </p>
+                <button class="btn btn-danger btn-ban">
+                  <i class="fa fa-ban" aria-hidden="true"></i>&#8194;
+                  <span class="data-of-employee">Заблокувати</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+         
+
+        </div>
+      </div>
+
+    </div> -->
+
+  </div>
+
+</div>

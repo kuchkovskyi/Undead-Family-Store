@@ -1,0 +1,67 @@
+<div class="container">
+
+  <div class="row row-sm">
+    <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+    </div>
+
+    <div class="col col-lg-3 col-md-3 col-sm-0 add-col"></div>
+    <div class="col col-lg-7 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="question-title">Як повернути товар у моєму місті?</h3>
+
+      <p class="answer-text">Ви можете повернути товар кур’єрською службою протягом 14 днів з моменту купівлі.</p>
+      <ol type="1">
+        <li class="number-li"><p class="answer-text">Прийдіть до найближчого відділення <span class="new-post">Нової Пошти</span>.</p></li>
+        <li class="number-li"><p class="answer-text">Оформте відправлення за <b class="new-post">реквізитами</b>:</p></li>
+        <div class="rekvisits">
+          <table class="table">
+            <tbody class="table-body">
+              <tr class="table-row">
+                <td class="first-item">Одержувач:</td>
+                <td class="second-item">Кучковський Б. А.</td>
+              </tr>
+              <tr class="table-row">
+                <td class="first-item">Телефон:</td>
+                <td class="second-item">+380 (98) 963 62 24</td>
+              </tr>
+              <tr class="table-row">
+                <td class="first-item">Вид доставки:</td>
+                <td class="second-item">склад-двері</td>
+              </tr>
+              <tr class="table-row">
+                <td class="first-item">Адреса:</td>
+                <td class="second-item">м. Рівне, вул. А. Мельника, 16, 141</td>
+              </tr>
+              <tr class="table-row">
+                <td class="first-item">Оплата доставки:</td>
+                <td class="second-item"><b class="new-post">коштами відправника</b></td>
+              </tr>
+              <tr class="table-row">
+                <td class="first-item">Оголошена вартість:</td>
+                <td class="second-item">вартість товару згідно з товарним чеком</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <li class="number-li"><p class="answer-text">Покладіть у посилку з товаром гарантійний талон і копію документа, що підтверджує купівлю (товарний чек, видаткову накладну).</p></li>
+      </ol>
+
+      <p class="answer-text">Ми зможемо прийняти повернення, тільки якщо товар у належному стані:</p>
+      <ul>
+        <li class="number-li"><p class="answer-text">без механічних пошкоджень;</p></li>
+        <li class="number-li"><p class="answer-text">повністю укомплектований;</p></li>
+        <li class="number-li"><p class="answer-text">з усіма збереженими ярликами та заводським маркуванням.</p></li>
+      </ul>
+
+      <h5 class="need-help">Все ще потрібна допомога?</h5>
+      <button class="btn" [routerLink]="['/support-request']">Зв'яжіться з нами</button>
+    </div>
+
+  </div>
+
+</div>

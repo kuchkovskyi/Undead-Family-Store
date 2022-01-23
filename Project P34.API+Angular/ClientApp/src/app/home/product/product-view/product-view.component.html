@@ -1,0 +1,137 @@
+<div class="container" *ngFor="let prod of product">
+
+  <!--BACK LINK-->
+  <div class="row row-sm">
+    <a [routerLink]="['/']" class="back-link">На головну</a>
+  </div>
+
+  <!--MAIN DATA OF PRODUCT-->
+  <div class="row" >
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/']" class="back-link">На головну</a>
+    </div>
+
+    <div class="col col-lg-10 col-md-12 col-sm-12 col-xs-12">
+
+      <div class="container internal-container">
+
+        <div class="row">
+          <div class="col col-lg-5 col-md-5 col-sm-12 col-xs-12 col-main-image">
+            <img src={{prod.image}} alt="Основна картинка" class="main-image-prod">
+          </div>
+
+          <div class="col col-lg-7 col-md-7 col-sm-12 col-xs-12 white-block">
+            <form action="" class="product-data">
+              <h4 class="name-of-product">{{ prod.name }}</h4>
+
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td class="item-right">
+                      <p class="price-of-product">{{ prod.price }}$</p>
+                    </td>
+                    <td class="item-left">
+                      <p class="status-exist">У наявності</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="description-of-product">{{ prod.description }}</p>
+
+              <div class="wrapper-image">
+                <img src='{{prod.images}}' alt="Додаткова картинка 1" class="small-picture">
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <p class="size-p"><span class="size-title">РОЗМІР</span></p>
+                </div>
+
+                <div class="row size-row">
+                  <div class="btns-block">
+                    <button class="btn size-btn" onclick="makeActive(event)" id="DefaultActive">S</button>
+                    <button class="btn size-btn" onclick="makeActive(event)">M</button>
+                    <button class="btn size-btn" onclick="makeActive(event)">L</button>
+                    <button class="btn size-btn" onclick="makeActive(event)">XL</button>
+                    <button class="btn size-btn" onclick="makeActive(event)">2XL</button>
+                  </div>
+                </div>
+              </div>
+
+              <table class="table" style="margin-top: 4%;">
+                <tbody>
+                  <tr>
+                    <td class="item-right"><button style="float: left;" (click)=addCartProducts(prod.id) class="btn btn-action btn-cart">&#8194;Додати у
+                        кошик</button></td>
+                    <td class="item-left"><button style="float: right;" class="btn btn-action btn-wish">&#8194;Додати у
+                        вибране</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--COMENTARIES-->
+  <div class="row">
+    <form class="leave-comment-form">
+      <input class="leave-comment-area" type="text" placeholder="Ваш коментарій:">
+      <button class="btn btn-primary leave-comment-btn" type="submit"><span class="leave-comment-btn-arrow">&#10146;</span></button>
+    </form>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+      <div class="comentary">
+        <div class="row">
+
+          <div class="img-block">
+            <img src="../../../../assets/images/Avatars/empty avatar.jpg" alt="Фото користувача" class="image-of-user">
+          </div>
+
+          <div class="description-of-comentary">
+            <p class="name-of-user">Jonn Wick</p>
+            <p class="text-of-user">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laboriosam
+              ad culpa sint quisquam, cupiditate fugit cum dolor, est ex quidem. Explicabo, modi? Totam odio quibusdam
+              vitae nesciunt, molestiae voluptatibus sit, tenetur delectus doloribus rerum architecto sequi iusto ad
+              tempore vero nisi facilis sed dolorem deserunt consequatur sint! Quo, fugit.</p>
+            <p class="date-of-comentary">25.03.2020</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="comentary">
+        <div class="row">
+
+          <div class="img-block">
+            <img src="../../../../assets/images/Avatars/empty avatar.jpg" alt="Фото користувача" class="image-of-user">
+          </div>
+
+          <div class="description-of-comentary">
+            <p class="name-of-user">Jonn Wick</p>
+            <p class="text-of-user">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laboriosam
+              Quo, fugit.</p>
+            <p class="date-of-comentary">25.03.2020</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

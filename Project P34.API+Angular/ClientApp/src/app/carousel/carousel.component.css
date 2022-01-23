@@ -1,0 +1,20 @@
+/*CAROUSEL*/
+
+.carousel-controls:hover { background-color: rgba(50.2, 50.2, 50.2, .1) !important; }
+
+.pn-btns {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 30px;
+  color: #727272;
+}
+
+.carousel-controls:hover .pn-btns { font-size: 40px; color: #000000; }
+
+/*MEDIAS*/
+@media screen and (max-width: 768px) {
+  .carousel-link-btn { display: none; }
+}
+
+@media screen and (max-width: 440px) {
+  .carousel { display: none; }
+}

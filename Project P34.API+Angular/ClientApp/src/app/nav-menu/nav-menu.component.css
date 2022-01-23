@@ -1,0 +1,353 @@
+/*FIRST NAV*/
+.navbar-dark { background-color: #000000 !important; }
+
+.navbar-brand { letter-spacing: 2px !important; }
+
+.nav-item { list-style-type: none !important; }
+
+.nav-link { color: #ffffff !important; font-size: 16px; }
+
+.nav-link:hover { color: tomato !important; }
+
+.btn-act {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    padding-top: 6px !important;
+}
+
+.btn-wishlist::before { content: '\f08a'; font-family: FontAwesome; }
+
+.btn-account::before { content: '\f007'; font-family: FontAwesome; }
+
+.btn-cart::before { content: '\f07a'; font-family: FontAwesome; }
+
+.btn-act:active, .btn-act:focus { box-shadow: none !important; }
+
+.dropdown-menu { border-radius: 0px !important; background-color: #212529 !important; }
+
+.dropdown-item { background-color: #212529 !important; color: #f0f0f1 !important; padding: 10px 20px !important; }
+
+.dropdown-item:focus,
+.dropdown-item:active,
+.dropdown-item:hover {
+    background-color: tomato !important; }
+
+.nav-item-search {
+    width: 100% !important;
+    list-style-type: none;
+    padding: 0px !important;
+    margin: 0 !important;
+}
+
+.srch-form-top {
+    width: 70% !important;
+    display: block;
+    margin: 10px auto !important;
+    position: relative;
+    font-size: 16px;
+}
+
+/*SECOND NAV*/
+.dark-box { width: 100%; background-color: #000000; padding-top: 20px; padding-bottom: 20px; display: none; }
+
+.srch-form {
+    position: relative;
+    width: 40%;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px !important;
+}
+
+.srch-area {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 0 solid #000000;
+    outline: none;
+    background-color: #f0f0f1;
+    color: #191919;
+    letter-spacing: 3px;
+}
+
+.srch-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20%;
+    height: 42px;
+    border: none !important;
+    background-color: tomato !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+}
+
+.srch-btn:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+.srch-btn:active, .srch-btn:focus { box-shadow: none !important; }
+
+
+/*LOGIN PLATFORM*/
+
+.modal-header, .modal-body, .modal-footer {
+    border: #191919 1px solid !important;
+    border-radius: 0px !important;
+    background-color: #191919 !important;
+}
+
+.modal-title {
+    display: block !important;
+    margin: 0px auto !important;
+    font-family: "Montserrat", sans-serif !important;
+    letter-spacing: 3px !important;
+    font-weight: 100 !important;
+    color: #ffffff !important;
+}
+
+.modal-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: tomato;
+    height: 1px;
+    transform: scale(1);
+}
+
+.close {
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+    color: tomato !important;
+    font-weight: 100 !important;
+    text-shadow: 0 0 0 tomato !important;
+    background-color: #191919 !important;
+}
+
+.close:focus, .close:active { box-shadow: none !important; border: none !important; }
+
+.close .close-X { color: tomato !important; text-shadow: 0 0 0 tomato !important; border: none !important; }
+
+.login-data {
+    margin: 5% 0 !important;
+    border-radius: 0px !important;
+    border: 1px #191919 solid !important;
+    letter-spacing: 2px !important;
+    background-color: #f0f0f1 !important;
+    color: #191919 !important;
+    padding: 25px 10px !important;
+}
+
+.login-data:hover,
+.login-data:focus,
+.login-data:active { box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important; border: 1px solid #f0f0f1 !important; }
+
+.btn-authorize {
+    background-color: tomato !important;
+    color: #ffffff !important;
+    padding: 10px 25% !important;
+    font-family: "Montserrat", sans-serif !important;
+    letter-spacing: 2px !important;
+    font-weight: 100 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border: tomato 1px solid !important;
+    border-radius: 0px !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn-authorize:focus, .btn-authorize:active, .btn-authorize:hover { box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important; }
+
+.login-menu { list-style-type: none; padding: 0px !important; margin-top: 30px; }
+
+.log-item {
+    display: block;
+    margin: 0px auto;
+    padding: 7px 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.modal-bottom-link { color: #ffffff; font-weight: 100; letter-spacing: 2px; }
+
+.modal-bottom-link:hover { color: tomato; text-decoration: none; }
+
+.log-soc-block { display: block; margin: 10px auto; text-align: center; }
+
+.log-soc-link {
+    width: 10%;
+    color: #f0f0f1;
+    padding-left: 2%;
+    padding-right: 2%;
+    cursor: pointer;
+}
+
+.log-soc-link:hover {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+/*MEDIA*/
+
+/* HIGH SCREENS */
+@media screen and (min-width: 1240px) {
+    .srch-form { width: 40%; }
+
+    .srch-btn { width: 20%; }
+}
+
+/* TABLETS */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .srch-form-top { display: none; }
+
+    .dark-box { display: block; }
+
+    .srch-form { width: 40%; }
+
+    .srch-btn { width: 20%; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .srch-form-top { display: none; }
+
+    .dark-box { display: block; }
+
+    .srch-form { width: 40%; }
+
+    .srch-btn { width: 20%; }
+}
+
+/*IPAD (HORIZONTAL)*/
+@media screen and (width: 1024px) and (height: 768px) {
+  .dark-box { display: none; }
+
+  .srch-form-top { display: block; }
+}
+
+/*IPAD PRO (VERTICAL)*/
+@media screen and (width: 1024px) and (height: 1366px) {
+  .srch-form-top { display: block; }
+
+  .dark-box { display: none; }
+}
+
+/* PHONES */
+@media screen and (max-width: 768px) {
+    .btn-wishlist::before {
+      content: 'Бажане';
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+    }
+
+    .btn-cart::before {
+      content: 'Кошик';
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+
+    .btn-account::before {
+      content: 'Особистий кабінет';
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+    }
+
+    .btn-act { padding-left: 0px; }
+
+    .btn-wishlist::after {
+      content: '';
+      display: block;
+      width: 100%;
+      background-color: #f0f0f1;
+      height: 1px;
+      transform: scale(1);
+    }
+
+    .btn-cart::after {
+      content: '';
+      display: block;
+      width: 100%;
+      background-color: tomato;
+      height: 1px;
+      transform: scale(1);
+    }
+
+    .btn-account::after {
+      content: '';
+      display: block;
+      width: 100%;
+      background-color: tomato;
+      height: 1px;
+      transform: scale(1);
+    }
+
+    .srch-form-top { display: none; }
+
+    .dark-box { display: block; }
+
+    .srch-form { width: 80%; }
+
+    .srch-area { height: 37px; }
+
+    .srch-btn { width: 20%; height: 37px; }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .btn-wishlist::before {
+    content: 'Бажане';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  .btn-account::before {
+    content: 'Особистий кабінет';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  .btn-cart::before {
+    content: 'Кошик';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .btn-act { padding-left: 0px; }
+
+  .btn-wishlist::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #f0f0f1;
+    height: 1px;
+    transform: scale(1);
+  }
+
+  .btn-account::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #f0f0f1;
+    height: 1px;
+    transform: scale(1);
+  }
+
+  .btn-cart::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: tomato;
+    height: 1px;
+    transform: scale(1);
+  }
+}
+
+/*XS SCREENS*/
+@media screen and (min-width: 280px) and (max-width: 400px) {
+  .navbar-brand { font-size: 14px; }
+
+  .log-soc-link { font-size: 16px; padding-left: 20px; padding-right: 20px; }
+}

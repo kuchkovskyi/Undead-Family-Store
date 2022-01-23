@@ -1,0 +1,93 @@
+.row { margin-top: 2% !important; }
+
+.col { display: block; margin: 0 auto; }
+
+.title { font-weight: 200; color: #b4b4b4; text-align: center; margin-bottom: 5%; }
+
+.form-control {
+  background-color: #f0f0f1;
+  color: #191919;
+  border-radius: 0%;
+  margin: 3% auto;
+  width: 70%;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.form-control:hover { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); transition: all .6s; }
+
+.form-control:focus,
+.form-control:active { box-shadow: none; border: 1px solid #f0f0f1; transition: all .6s; }
+
+.btn-login {
+  display: block;
+  margin: 2% auto 3%;
+  background-color: tomato;
+  color: #f0f0f1;
+  border-radius: 0%;
+  padding: 1% 20%;
+}
+
+.btn-login:hover { box-shadow: rgba(255, 99, 71, 0.5); transition: all .6s; }
+
+.btn-login:active,
+.btn-login:focus { border: 1px solid tomato; box-shadow: none; transition: all .6s; }
+
+.auth-block { display: block; margin: 0 auto; }
+
+.auth-block__ul { list-style-type: none; padding: 0; }
+
+.auth-block__li { display: block; margin: 3% auto; width: 50%; }
+
+.auth-link {
+  text-align: center;
+  color: #f0f0f1;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.auth-link:hover { color: tomato; text-decoration: none; transition: all .6s; }
+
+.soc-webs { display: block; margin: 0 auto; margin-bottom: 4%; }
+
+.soc-webs-table { display: block; margin: 0 auto; width: 80px; }
+
+.soc-web-td { width: 40px; }
+
+.soc-web-link { color: #f0f0f1; cursor: pointer; }
+
+.soc-web-link:hover { color: #b4b4b4; transition: all .6s; }
+
+.fa-facebook-square { float: left; }
+
+.fa-google { float: right; }
+
+/*MEDIA*/
+
+/*TABLETS*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .title { font-size: 18px; margin-bottom: 20px; }
+
+  .form-control { width: 90%; font-size: 16px; }
+
+  .btn-login { font-size: 16px; }
+
+  .auth-link { font-size: 14px; margin: 10px 0; }
+}
+
+/*PHONES*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .title { font-size: 18px; margin-bottom: 20px; }
+
+  .form-control { width: 100%; font-size: 14px; margin: 15px 0; }
+
+  .form-control:hover { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); transition: all .6s; }
+
+  .btn-login { font-size: 14px; margin-bottom: 10px; }
+
+  .btn-login:hover { box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); transition: all .6s; }
+
+  .auth-link { font-size: 12px; margin: 10px 0; }
+}

@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="row row-sm">
+    <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+    </div>
+
+    <div class="col col-lg-3 col-md-3 col-sm-0 add-col"></div>
+    <div class="col col-lg-7 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="question-title">Я зробив (-ла) замовлення. Що далі?</h3>
+      <h5 class="answer-title">Якщо оплачування відбулось через картку</h5>
+      <p class="answer-text">Якщо ви оплатили замовлення карткою, на, вказаний Вами, номер телефону та електронну адресу
+        прийде
+        SMS-повідомлення з ТТН-кодом, який знадобиться Вам для того, щоб отримати товар на відділення <a
+          class="new-post" href="https://novaposhta.ua/"> Нової Пошти</a>.</p>
+
+      <h5 class="answer-title">Якщо оплачування відбудеться накладеним платежем</h5>
+      <p class="answer-text">Після обробки Вашого замовлення, на, вказаний Вами, номер телефону та електронну адресу
+        прийде SMS-повідомлення з номером Вашого
+        відправлення та реквізитами для оплати.</p>
+      <h5 class="need-help">Все ще потрібна допомога?</h5>
+      <button class="btn" [routerLink]="['/support-request']">Зв'яжіться з нами</button>
+    </div>
+
+  </div>
+
+</div>

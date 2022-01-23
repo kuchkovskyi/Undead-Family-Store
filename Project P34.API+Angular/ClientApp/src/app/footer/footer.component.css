@@ -1,0 +1,124 @@
+/*BTN TO TOP*/
+#toTop {
+  background-color: #171717;
+  border: 1px solid #f0f0f1;
+  padding: 10px 15px;
+  color: #f0f0f1;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  border-radius: 0px;
+
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+  display: none;
+
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+}
+
+#toTop::before { content: '>'; }
+
+#toTop:hover { color: tomato; border: tomato 1px solid; border-radius: 0px; }
+
+#toTop:active, #toTop:focus { color: #f0f0f1; border: 1px solid #f0f0f1; border-radius: 0px; }
+
+/*FOOTER*/
+footer { background-color: #171717; color: #b4b4b4; }
+
+.footer-brand { border-bottom: 1px solid #121011; }
+
+.footer-brand:hover {
+  color: #f0f0f1;
+  text-decoration: none !important;
+  border-bottom: 1px solid tomato !important;
+  transition: all .6s;
+}
+
+.col { margin-top: 20px !important; margin-bottom: 20px !important; }
+
+.footer-top { padding-bottom: 3%; }
+
+.footer-title {
+  margin-top: 10%;
+  color: #b4b4b4;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.footer-menu { list-style-type: none; margin: 0 !important; padding: 0 !important; }
+
+.footer-menu-item {
+  margin: 5% 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer-link { color: #f0f0f1; }
+
+.footer-link:hover { color: #f0f0f1; text-decoration: underline; }
+
+hr { background-color: #b4b4b4; width: 100%; }
+
+.footer-bottom { background-color: #121011; }
+
+.footer-left a { margin-right: 20px; color: #b4b4b4; }
+
+.footer-right a { margin-left: 20px; color: #b4b4b4; }
+
+.footer-right a:hover { text-decoration: none; }
+
+.footer-right a i:hover { color: #b4b4b4 !important; }
+
+.fa:hover { color: #f0f0f1 !important; }
+
+.socials:hover .fa-soc-webs { color: #f0f0f1 !important; transition: all .6s; }
+
+/*MEDIA*/
+
+/*LAPTOPS 'N' HIGH SCREENS*/
+
+@media only screen and (min-width: 1680px) {
+  #toTop { padding: 15px 20px; }
+}
+
+@media only screen and (min-width: 1240px) {
+
+}
+/*TABLETS*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1240px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #toTop { bottom: 11.5%; }
+}
+
+/*PHONES*/
+@media only screen and (max-width: 768px) {
+  #toTop { display: none !important; }
+}
+
+/*XS SCREENS*/
+@media screen and (max-width: 497px) {
+  .footer-info { padding-left: 30px; padding-right: 30px; }
+
+  .footer-title { font-size: 16px; letter-spacing: 1px; }
+
+  .footer-menu-item { font-size: 12px; }
+}
+
+@media screen and (min-width: 334px) and (max-width: 354px) {
+  .footer-info { padding-left: 30px; padding-right: 30px; }
+}
+
+@media screen and (min-width: 280px) and (max-width: 321px) {
+  .follow, .fa-soc-webs { font-size: 10px; }
+}

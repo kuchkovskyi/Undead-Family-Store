@@ -1,0 +1,53 @@
+<div class="container">
+
+  <div class="row">
+
+    <!--BIG BACK LINK-->
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-hs">
+      <a [routerLink]="['/']" class="back-link"><span class="back-arrow"></span> Назад </a>
+    </div>
+
+    <!--LABELS-->
+    <div class="col col-lg-4 col-md-0 col-sm-0 col-xs-0 col-lbl">
+      <div class="form-group">
+        <ul class="lbl-menu">
+          <li class="lbl-menu-item"><label for="FullNameOfUser" class="data-lbl">Ім'я та прізвище:</label></li>
+          <li class="lbl-menu-item"><label for="AgeOfUser" class="data-lbl">Вік:</label></li>
+          <li class="lbl-menu-item"><label for="PhoneOfUser" class="data-lbl">Номер телефону:</label></li>
+          <li class="lbl-menu-item"><label for="EmailOfUser" class="data-lbl">Email:</label></li>
+          <li class="lbl-menu-item"><label for="PasswordOfUser" class="data-lbl">Пароль:</label></li>
+          <li class="lbl-menu-item"><label for="RepeatPasswordOfUser" class="data-lbl">Повторіть пароль:</label></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--SMALL BACK LINK 'N' REGISTER PLATFORM-->
+    <div class="col col-lg-6 col-md-10 col-sm-12 col-xs-12">
+
+      <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+        <!--SMALL BACK LINK-->
+        <a [routerLink]="['/']" class="back-link bk-link-ss"> <span class="back-arrow"></span> Назад</a>
+
+        <!--DATA OF USER-->
+        <div class="form-group">
+          <input type="text" class="form-control" name="FullName" [(ngModel)]="model.FullName" id="FullNameOfUser"
+            placeholder="Ім'я та прізвище:">
+          <input type="number" class="form-control" id="AgeOfUser" [(ngModel)]="model.Age" name="Age" placeholder="Вік:">
+          <input type="text" class="form-control" id="PhoneOfUser" [(ngModel)]="model.PhoneNumber" name="PhoneNumber"
+            placeholder="Номер телефону:">
+          <input type="email" class="form-control" id="EmailOfUser" [(ngModel)]="model.Email"
+            aria-describedby="emailHelp" name="Email" placeholder="Email:">
+          <input type="password" class="form-control" id="PasswordOfUser" [(ngModel)]="model.Password" name="Password"
+            placeholder="Пароль:">
+          <input type="password" class="form-control" id="RepeatPasswordOfUser" [(ngModel)]="confirmPassword"
+            name="confirmPassword" placeholder="Підтвердіть пароль:">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-regestration">Зареєструватися</button>
+      </form>
+
+    </div>
+
+  </div>
+  
+</div>

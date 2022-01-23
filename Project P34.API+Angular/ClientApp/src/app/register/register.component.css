@@ -1,0 +1,106 @@
+/*BACK LINK*/
+
+.container { margin-top: 1% !important; }
+
+.back-link { color: tomato !important; letter-spacing: 2px; font-size: 16px; }
+
+.back-arrow { font-family: 'Nanum Gothic', sans-serif; }
+
+.back-arrow::before { content: '<'; }
+
+.back-link:hover { text-decoration: none; }
+
+/*LABELS*/
+
+.lbl-menu {
+  list-style-type: none;
+  padding: 0% !important;
+  margin-top: 2% !important;
+}
+
+.lbl-menu-item { margin: 2px auto; margin: 6% 0; }
+
+.data-lbl {
+  background-color: transparent;
+  color: tomato;
+  font-size: 16px;
+}
+
+/*DATA OF*/
+form { margin-top: 1% !important; }
+
+.form-control {
+    background-color: #f0f0f1 !important;
+    color: #191919 !important;
+    border: 0px #f0f0f1 solid !important;
+    border-radius: 0px !important;
+    margin: 2% 0 !important;
+    letter-spacing: 2px !important;
+    height: 42px !important;
+}
+
+.form-control:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
+    transition: all .6s !important;
+    border: 0px solid #f0f0f1 !important;
+}
+
+.form-control:active,
+.form-control:focus { box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important; border: #f0f0f1 0px solid !important; }
+
+.form-group:hover .form-control { border: #f0f0f1 0px solid !important; }
+
+.btn-regestration {
+    background-color: tomato !important;
+    border: 1px tomato solid !important;
+    border-radius: 0px !important;
+    letter-spacing: 2px !important;
+    color: #f0f0f1 !important;
+    margin-bottom: 1% !important;
+}
+
+.btn-regestration:hover {
+    background-color: tomato !important;
+    border: 1px tomato solid !important;
+    box-shadow: 0 0 30px rgba(255, 99, 71, 0.6);
+}
+
+.btn-regestration:active,
+.btn-regestration:focus { box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important; }
+
+/*MEDIA*/
+
+/*LAPTOPS 'N' HIGH SCREENS */
+@media screen and (min-width: 1240px) {
+    .bk-link-ss { display: none; }
+}
+
+/* TABLETS */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+    .bk-link-ss { display: none; }
+
+    .col-lbl { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bk-link-ss { display: none; }
+
+    .col-lbl { display: none; }
+}
+
+/* PHONES */
+@media screen and (max-width: 768px) {
+    .bk-link-ss { display: block; margin-bottom: 5% !important; }
+
+    .col-hs { display: none; }
+
+    .col-lbl { display: none; }
+
+    .back-link { font-size: 14px; }
+
+    .back-arrow { font-size: 14px; }
+
+    .form-control { font-size: 14px; }
+
+    .btn-regestration { font-size: 14px; }
+}

@@ -1,0 +1,86 @@
+<div class="container">
+
+  <h3 class="title-page"><span class="personal-room-span">Особистий кабінет</span></h3>
+
+  <div class="row">
+
+    <!--IMAGE-->
+    <div class="col col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <img [src]="user.pictureUrl" alt="" class="user-image">
+    </div>  
+
+    <!--DATA OF USER-->
+    <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+      <!--OSNOVNE-->
+      <div>
+        <h4 class="subtitle-of-page">Основне</h4>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="data-first">Ім'я:</td>
+              <td class="data-second">{{ user.fullName }}</td>
+            </tr>
+            <tr>
+              <td class="data-first">Вік:</td>
+              <td class="data-second">{{ user.age }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--LIVING-->
+      <div>
+        <h4 class="subtitle-of-page">Проживання</h4>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="data-first">Місто:</td>
+              <td class="data-second"></td>
+            </tr>
+            <tr>
+              <td class="data-first">Область:</td>
+              <td class="data-second"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--CONTACTS-->
+      <div>
+        <h4 class="subtitle-of-page">Контактні данні</h4>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="data-first">Телефон:</td>
+              <td class="data-second">{{ user.phone }}</td>
+            </tr>
+            <tr>
+              <td class="data-first">Email:</td>
+              <td class="data-second">{{ user.email }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!--ACTIONS-->
+    <hr>
+    <div class="col col-lg-3 col-md-3 col-sm-12 col-xs-12">
+      <div class="form-group">
+        <a [routerLink]="['/user-area/edit-info']" class="action-link">Редагувати профіль</a>
+      </div>
+
+      <div class="form-group">
+        <a [routerLink]="['/user-area/delete-profile']" class="action-link">Видалити профіль</a>
+      </div>
+    </div>
+    <hr>
+
+  </div>
+
+</div>

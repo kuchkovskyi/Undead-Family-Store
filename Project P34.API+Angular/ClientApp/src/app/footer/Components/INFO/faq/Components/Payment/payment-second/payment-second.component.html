@@ -1,0 +1,36 @@
+<div class="container">
+
+  <div class="row row-sm">
+    <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+  </div>
+
+  <div class="row">
+
+    <div class="col col-lg-2 col-md-2 col-sm-0 col-xs-0 col-lg">
+      <a [routerLink]="['/faq']" class="back-link">Допомога</a>
+    </div>
+
+    <div class="col col-lg-3 col-md-3 col-sm-0 add-col"></div>
+    <div class="col col-lg-7 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="question-title">Як використовувати промокод?</h3>
+
+      <h5 class="answer-title">Покупка</h5>
+      <p class="answer-text">Промокод надає Вам можливість придбати будь-який товар зі знижкою <span class="new-post">-10%</span>,
+        <span class="new-post">-25%</span>, <span class="new-post">-30%</span>, <span class="new-post">-45%</span>. Щоб активувати промокод:</p>
+      <ol type="1">
+        <li class="number-li">Перейдіть на сторінку товару, що Вас зацікавив;</li>
+        <li class="number-li">Натисніть кнопку <br class="br-sm"><span class="promo">Активувати промокод</span> ;</li>
+        <li class="number-li">У вспливаючому вікні введіть Ваш промо та натисніть на <br class="br-sm">
+          <span class="promo">Активувати</span> ;</li>
+        <li class="number-li">Після активації промокоду натисніть <br class="br-sm">
+          <span class="buy"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Додати у кошик</span> .</li>
+      </ol>
+      <p class="answer-text"></p>
+
+      <h5 class="need-help">Все ще потрібна допомога?</h5>
+      <button class="btn" [routerLink]="['/support-request']">Зв'яжіться з нами</button>
+    </div>
+
+  </div>
+
+</div>
